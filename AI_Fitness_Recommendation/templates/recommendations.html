@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head><title>Recommendations</title></head>
+<body>
+<h2>Your Fitness Recommendations</h2>
+{% if recommendations %}
+<p>Workout Plan: {{ recommendations['Workout Plan'] }}</p>
+<p>Diet Plan: {{ recommendations['Diet Plan'] }}</p>
+<p>Tips: {{ recommendations['Tips'] }}</p>
+{% else %}
+<p>No recommendations yet. Fill the form first.</p>
+{% endif %}
+</body>
+</html>
